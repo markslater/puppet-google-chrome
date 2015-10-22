@@ -10,7 +10,7 @@ class google_chrome::params() {
       $require = []
       case $::operatingsystem {
         'Fedora', 'OpenSuSE': {
-          $repo_base_url = 'http://dl.google.com/linux/chrome/rpm/stable/$basearch'      
+          $repo_base_url = 'http://dl.google.com/linux/chrome/rpm/stable/$basearch'
         }
         default: {
           fail("Unsupported operating system ${::operatingsystem}")
